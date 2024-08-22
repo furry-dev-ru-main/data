@@ -220,7 +220,7 @@ function displayData(data) {
         c2.classList = "px-4 py-2 outline outline-1 outline-gray-700";
         c3.classList = "px-4 py-2 outline outline-1 outline-gray-700";
 
-        c1.innerHTML = `<a href="https://${i.subdomain}.is-a.dev" class="text-blue-600 hover:text-blue-700">${i.subdomain}</a>`;
+        c1.innerHTML = `<a href="https://${i.subdomain}.furry-dev.ru" class="text-blue-600 hover:text-blue-700">${i.subdomain}</a>`;
         c2.innerHTML = `<span class="font-semibold">Username:</span> ${i.owner.username ? `<a href="https://github.com/${i.owner.username}" class="underline underline-2 hover:no-underline">${i.owner.username}</a>` : `<span class="italic">None</span>`}`;
         c3.innerHTML = records;
     });
@@ -229,7 +229,7 @@ function displayData(data) {
 // Load data function
 function loadData() {
     showLoadingSpinner(); // Show loading spinner while data is loading
-    fetch("https://raw-api.is-a.dev", {
+    fetch("https://raw-api.furry-dev.ru", {
         method: "GET",
     })
     .then((res) => res.json())
